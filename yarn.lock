@@ -240,7 +240,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*":
+"@types/node@npm:*, @types/node@npm:^20.14.11":
   version: 20.14.11
   resolution: "@types/node@npm:20.14.11"
   dependencies:
@@ -503,6 +503,8 @@ __metadata:
   resolution: "bonnie@workspace:."
   dependencies:
     "@eslint/js": "npm:^9.7.0"
+    "@types/node": "npm:^20.14.11"
+    chalk: "npm:4.1.2"
     discord.js: "npm:^14.15.3"
     dotenv: "npm:^16.4.5"
     eslint: "npm:9.x"
@@ -549,7 +551,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^4.0.0":
+"chalk@npm:4.1.2, chalk@npm:^4.0.0":
   version: 4.1.2
   resolution: "chalk@npm:4.1.2"
   dependencies:
