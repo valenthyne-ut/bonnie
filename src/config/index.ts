@@ -37,7 +37,12 @@ function getDiscordAppIntents(): Array<GatewayIntentsString> {
 	}
 }
 
+function getDiscordDeployCommands(): boolean {
+	return process.env.DISCORD_DEPLOY_COMMANDS?.toLowerCase() === "true";
+}
+
 export default {
 	DISCORD_APP_TOKEN: getDiscordAppToken(),
-	DISCORD_APP_INTENTS: getDiscordAppIntents()
+	DISCORD_APP_INTENTS: getDiscordAppIntents(),
+	DISCORD_DEPLOY_COMMANDS: getDiscordDeployCommands()
 };
