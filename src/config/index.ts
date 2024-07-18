@@ -41,8 +41,14 @@ function getDiscordDeployCommands(): boolean {
 	return process.env.DISCORD_DEPLOY_COMMANDS?.toLowerCase() === "true";
 }
 
+function getLLMAPIServerAddress(): string {
+	return process.env.OPENAI_BASE_URL || die("No LLM API address provided.");
+}
+
 export default {
 	DISCORD_APP_TOKEN: getDiscordAppToken(),
 	DISCORD_APP_INTENTS: getDiscordAppIntents(),
-	DISCORD_DEPLOY_COMMANDS: getDiscordDeployCommands()
+	DISCORD_DEPLOY_COMMANDS: getDiscordDeployCommands(),
+
+	LLM_API_SERVER_ADDRESS: getLLMAPIServerAddress()
 };
