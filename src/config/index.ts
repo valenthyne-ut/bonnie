@@ -42,7 +42,7 @@ function getDiscordDeployCommands(): boolean {
 }
 
 function getLLMAPIServerAddress(): string {
-	return process.env.OPENAI_BASE_URL || die("No LLM API address provided.");
+	return process.env.LLM_API_SERVER_ADDRESS || die("No LLM API address provided.");
 }
 
 export default {

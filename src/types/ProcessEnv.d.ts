@@ -7,7 +7,7 @@ declare global {
 			DISCORD_APP_INTENTS: string | undefined;
 			DISCORD_DEPLOY_COMMANDS: string | undefined;
 
-			OPENAI_BASE_URL: string | undefined;
+			LLM_API_SERVER_ADDRESS: string | undefined;
 		}
 	}
 }
